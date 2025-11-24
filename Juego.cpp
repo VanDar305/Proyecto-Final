@@ -3,6 +3,13 @@
 #include <cctype>
 #include <limits>
 
+#ifdef _WIN32
+    system("cls");
+#else
+    system("clear");
+#endif
+
+
 Juego::Juego() {}
 
 void Juego::imprimirPilaTesoros(std::stack<TipoTesoro> pilaTesoros) {
